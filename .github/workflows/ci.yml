@@ -1,0 +1,14 @@
+name: My First CI Pipeline
+
+on:
+  push:
+
+
+jobs:
+  demo:
+    runs-on: windows-latest
+  
+  steps:
+    - name: Print Message
+      run: echo "Hello this is My first pipeline its running"
+

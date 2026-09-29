@@ -10,13 +10,9 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
-
-    - name: Check HTML File
-      run: Test-Path index.html
-
-    - name: Check CSS File
-      run: Test-Path style.css
-
-    - name: Check JavaScript File
-      run: Test-Path script.js
+    
+    - name: Validate HTML
+    - uses: Cyb3r-Jak3/html5validator-action@v8.0.0
+      with:
+        root: -
 

@@ -2,6 +2,8 @@ name: My First CI Pipeline
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   check:
